@@ -83,8 +83,8 @@ async function main() {
     /*
      *Deployment pol
      */
-    const polTokenName = "Pol Token";
-    const polTokenSymbol = "POL";
+    const polTokenName = "exSat Token";
+    const polTokenSymbol = "XSAT";
     const polTokenInitialBalance = ethers.parseEther("20000000");
 
     const polTokenFactory = await ethers.getContractFactory("ERC20PermitMock", deployer);

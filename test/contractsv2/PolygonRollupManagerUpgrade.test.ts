@@ -57,8 +57,8 @@ describe("Polygon Rollup manager upgraded", () => {
     let polygonZkEVMGlobalExitRoot: PolygonZkEVMGlobalExitRootV2;
     let rollupManagerContract: PolygonRollupManagerMock;
 
-    const polTokenName = "POL Token";
-    const polTokenSymbol = "POL";
+    const polTokenName = "exSat Token";
+    const polTokenSymbol = "XSAT";
     const polTokenInitialBalance = ethers.parseEther("20000000");
 
     const urlSequencer = "http://zkevm-json-rpc:8123";

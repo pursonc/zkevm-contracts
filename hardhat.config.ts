@@ -242,6 +242,24 @@ const config: HardhatUserConfig = {
                 count: 20,
             },
         },
+        eosevm: {
+            url: "https://api.evm.eosnetwork.com",
+            accounts: {
+                mnemonic: process.env.MNEMONIC || DEFAULT_MNEMONIC,
+                path: "m/44'/60'/0'/0",
+                initialIndex: 0,
+                count: 20,
+            },
+        },
+        eosevm_testnet: {
+            url: "https://api.testnet.evm.eosnetwork.com",
+            accounts: {
+                mnemonic: process.env.MNEMONIC || DEFAULT_MNEMONIC,
+                path: "m/44'/60'/0'/0",
+                initialIndex: 0,
+                count: 20,
+            },
+        },
     },
     gasReporter: {
         enabled: !!process.env.REPORT_GAS,
